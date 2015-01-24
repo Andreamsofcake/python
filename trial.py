@@ -1,12 +1,15 @@
-color = input("What is your favorite color? ")
+# color = input("What is your favorite color? ")
 
-if color == "brown":
-  print(color + " is POOOP")
-else:
-  print("You look good in " + color)
-number_1 = input("First number ")
-number_2 = input("Second number ")
-number_3 = input("Third number ")
-max_of_three = max(number_1, number_2,  number_3)
+# if color == "brown":
+#   print(color + " is POOOP")
+# else:
+#   print("You look good in " + color)
 
-print (max_of_three)
+# number_1 = input("First number ")
+# number_2 = input("Second number ")
+# number_3 = input("Third number ")
+# max_of_three = max(number_1, number_2,  number_3)
+# print (max_of_three)
+
+name = input("What is your name?")
+print(name.count(""))
