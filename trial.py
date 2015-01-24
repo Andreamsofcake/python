@@ -1,9 +1,9 @@
 # # excercise 1
-# color = input("What is your favorite color? ")
-# if color == "brown":
-#   print(color + " is POOOP")
-# else:
-#   print("You look good in " + color)
+color = input("What is your favorite color? ")
+if color == "brown":
+  print("{} is POOOP".format(color))
+else:
+  print("You look good in {}".format(color))
 # # excercise 2
 # number_1 = input("First number ")
 # number_2 = input("Second number ")
@@ -14,8 +14,8 @@
 # name = input("What is your name?")
 # print(name.count(""))
 # # excercise 4
-letter = input("Enter a letter ")
-if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
-  print("true")
-else:
-  print("false")
+# letter = input("Enter a letter ")
+# if letter == "a" or letter == "e" or letter == "i" or letter == "o" or letter == "u":
+#   print("true")
+# else:
+#   print("false")
