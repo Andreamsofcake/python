@@ -20,16 +20,20 @@
 # else:
 #   print("consonent")
 # # excercise 5
-user_word = input("What is your word? ")
-user_num = input("What is the ratio? ")
+# user_word = input("What is your word? ")
+# user_num = input("What is the ratio? ")
 
-try:
-  num = int(user_num)
-except:
-  num = float(user_num)
+# try:
+#   num = int(user_num)
+# except:
+#   num = float(user_num)
 
-if not "." in user_num:
-  print(user_word[num])
-else:
-  ratio = round(len(user_word)*num)
-  print(user_word[ratio])
+# if not "." in user_num:
+#   print(user_word[num])
+# else:
+#   ratio = round(len(user_word)*num)
+#   print(user_word[ratio])
+# # excercise 6
+shopping_list = list()
+
+print("What should we")
