@@ -35,8 +35,35 @@
 #   print(user_word[ratio])
 # # excercise 6
 # 
-full_name = "Andrea Moulding"
-name_list = full_name.split(" ")
-greeting_list = "Hi, I'm {}".format(name_list[0]).split(" ")
-greeting = " ".join(greeting_list)
-print(greeting)
+# full_name = "Andrea Moulding"
+# name_list = full_name.split(" ")
+# greeting_list = "Hi, I'm {}".format(name_list[0]).split(" ")
+# greeting = " ".join(greeting_list)
+# print(greeting)
+# excercise 7
+book_list = []
+
+def show_help():
+  print("Name of the Book?")
+  print("Enter DONE to stop")
+
+def add_to_list(books):
+  book_list.append(books)
+  print("Added {} to list".format(books))
+
+def show_books():
+  print("Here are your books:")
+  for books in book_list:
+    print(books)
+
+show_help()
+
+while True:
+  new_book = input("> ")
+  if new_book == "DONE":
+    show_books()
+    break
+  add_to_list(new_book)
+  continue
+
+
