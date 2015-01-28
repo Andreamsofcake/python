@@ -34,6 +34,9 @@
 #   ratio = round(len(user_word)*num)
 #   print(user_word[ratio])
 # # excercise 6
-shopping_list = list()
-
-print("What should we")
+# 
+full_name = "Andrea Moulding"
+name_list = full_name.split(" ")
+greeting_list = "Hi, I'm {}".format(name_list[0]).split(" ")
+greeting = " ".join(greeting_list)
+print(greeting)
