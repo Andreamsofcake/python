@@ -40,38 +40,48 @@
 # greeting_list = "Hi, I'm {}".format(name_list[0]).split(" ")
 # greeting = " ".join(greeting_list)
 # print(greeting)
-# excercise 7
-book_list = []
+# # excercise 7
+# book_list = []
 
-def show_help():
-  print("Name of the Book?")
-  print("Enter HELP for instructions")
-  print("Enter SHOW to show list")
-  print("Enter DONE to stop")
+# def show_help():
+#   print("Name of the Book?")
+#   print("Enter HELP for instructions")
+#   print("Enter SHOW to show list")
+#   print("Enter DONE to stop")
 
-def add_to_list(books):
-  book_list.append(books)
-  print("Added {} to list".format(books))
+# def add_to_list(books):
+#   book_list.append(books)
+#   print("Added {} to list".format(books))
 
-def show_books():
-  print("Here are your books:")
-  for books in book_list:
-    print(books)
+# def show_books():
+#   print("Here are your books:")
+#   for books in book_list:
+#     print(books)
 
-show_help()
+# show_help()
 
-while True:
-  new_book = input("> ")
-  if new_book == "DONE":
-    show_books()
-    break
-  elif new_book == "HELP":
-    show_help()
-    continue
-  elif new_book == "SHOW":
-    show_books()
-    continue
-  add_to_list(new_book)
-  continue
+# while True:
+#   new_book = input("> ")
+#   if new_book == "DONE":
+#     show_books()
+#     break
+#   elif new_book == "HELP":
+#     show_help()
+#     continue
+#   elif new_book == "SHOW":
+#     show_books()
+#     continue
+#   add_to_list(new_book)
+#   continue
+#   excercise 8
 
+new_list = [1, 2, 3, 4]
+
+def add_list(list):
+  amount = 0
+  for num in list:
+    amount += num
+  return amount
+
+print(add_list(new_list))
 
