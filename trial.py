@@ -45,6 +45,8 @@ book_list = []
 
 def show_help():
   print("Name of the Book?")
+  print("Enter HELP for instructions")
+  print("Enter SHOW to show list")
   print("Enter DONE to stop")
 
 def add_to_list(books):
@@ -63,6 +65,12 @@ while True:
   if new_book == "DONE":
     show_books()
     break
+  elif new_book == "HELP":
+    show_help()
+    continue
+  elif new_book == "SHOW":
+    show_books()
+    continue
   add_to_list(new_book)
   continue
 
