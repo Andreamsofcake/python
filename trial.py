@@ -89,7 +89,33 @@
 
 import random
 
-def random_num(num):
-  return random.randint(1, num)
+guessed_nums = []
+rand_num = random.randint(1, 10)
+allowed_guesses = 5
 
-print(random_num(10))
+while len(guessed_nums) < allowed_guesses:
+  guess = input("Guess a number between 1 and 10: ")
+
+  try:
+    player_num = int(guess)
+  except:
+    print("That is not a whole number.")
+    break
+  if not player_num > 0 or not player_num < 11:
+    print("That number isn't between 1 and 10.")
+    break
+
+  guessed_nums.append(player_num)
+
+  if player_num == rand_num:
+    print("You Won in {} tries".format(len(guessed_nums)))
+    break
+  else:
+    if rand_num > player_num:
+      print("Nope! My number is higher.")
+    else:
+      print("Nope! My number is lower.")
+    continue
+
+if not rand_num in guessed_nums:
+  print("Sorry my number was {}".format(rand_num))
