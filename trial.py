@@ -73,15 +73,23 @@
 #     continue
 #   add_to_list(new_book)
 #   continue
-#   excercise 8
+# #   excercise 8
 
-new_list = [1, 2, 3, 4]
+# new_list = [1, 2, 3, 4]
 
-def add_list(list):
-  amount = 0
-  for num in list:
-    amount += num
-  return amount
+# def add_list(list):
+#   amount = 0
+#   for num in list:
+#     amount += num
+#   return amount
 
-print(add_list(new_list))
+# print(add_list(new_list))
+# 
+# excercise 9
 
+import random
+
+def random_num(num):
+  return random.randint(1, num)
+
+print(random_num(10))
