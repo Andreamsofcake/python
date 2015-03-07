@@ -100,7 +100,15 @@ response = []
 
 for numbers in my_list:
   numbers_list = list(numbers.lower())
-  print(numbers_list)
 
+  for vowel in vowels:
+    while True:
+      try:
+        numbers_list.remove(vowel)
+      except:
+        break
+  response.append(''.join(numbers_list).capitalize())
+
+print(response)
 
 
