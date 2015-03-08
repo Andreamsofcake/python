@@ -93,22 +93,28 @@
 # list_3 = list_1 + list_2
 # print(list_3)
 #
-# exercise 10
-my_list = ["One", "Two", "Three", "Four"]
-vowels = list("aeiou")
-response = []
+# # exercise 10
+# my_list = ["One", "Two", "Three", "Four"]
+# vowels = list("aeiou")
+# response = []
 
-for numbers in my_list:
-  numbers_list = list(numbers.lower())
+# for numbers in my_list:
+#   numbers_list = list(numbers.lower())
 
-  for vowel in vowels:
-    while True:
-      try:
-        numbers_list.remove(vowel)
-      except:
-        break
-  response.append(''.join(numbers_list).capitalize())
+#   for vowel in vowels:
+#     while True:
+#       try:
+#         numbers_list.remove(vowel)
+#       except:
+#         break
+#   response.append(''.join(numbers_list).capitalize())
 
-print(response)
+# print(response)
+#
 
+names = ['Ken', 'Sam', 'Bob']
+
+names_1 = names.pop()
+
+print(names_1)
 
