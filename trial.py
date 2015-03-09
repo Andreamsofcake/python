@@ -112,9 +112,48 @@
 # print(response)
 #
 
-names = ['Ken', 'Sam', 'Bob']
+# names = ['Ken', 'Sam', 'Bob']
 
-names_1 = names.pop()
+# names_1 = names.pop()
 
-print(names_1)
+# print(names_1)
+#
+# exercies 12
+book_list = []
 
+def remove_item(idx):
+  
+
+def show_help():
+  print("\nSeparate each item with a comma.")
+  print("Name of the Book?")
+  print("Enter HELP for instructions")
+  print("Enter SHOW to show list")
+  print("Enter DONE to stop")
+
+def add_to_list(books):
+  book_list.append(books)
+  print("Added {} to list".format(books))
+
+def show_books():
+  print("Here are your books:")
+  count = 1
+  for books in book_list:
+    print("{}: {}".format(count, books))
+    count += 1
+
+show_help()
+
+while True:
+  new_book = input("> ")
+  if new_book == "DONE":
+    show_books()
+    break
+  elif new_book == "HELP":
+    show_help()
+    continue
+  elif new_book == "SHOW":
+    show_books()
+    continue
+  add_to_list(new_book)
+  continue
