@@ -122,7 +122,9 @@
 book_list = []
 
 def remove_item(idx):
-  
+  index = idx - 1
+  item = book_list.pop(index)
+  print("Removed {}".format(item))
 
 def show_help():
   print("\nSeparate each item with a comma.")
@@ -130,6 +132,7 @@ def show_help():
   print("Enter HELP for instructions")
   print("Enter SHOW to show list")
   print("Enter DONE to stop")
+  print("Enter REMOVE to remove book")
 
 def add_to_list(books):
   book_list.append(books)
@@ -154,6 +157,11 @@ while True:
     continue
   elif new_book == "SHOW":
     show_books()
+    continue
+  elif new_book =="REMOVE":
+    show_books()
+    idx = input("Book number?")
+    remove_item(int(idx))
     continue
   add_to_list(new_book)
   continue
