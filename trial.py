@@ -120,6 +120,11 @@
 #
 # exercies 12
 book_list = []
+def move_item(idx, new_idx):
+  index = idx - 1
+  new_index = new_idx - 1
+  item = book_list.pop(index)
+  book_list.insert(new_index, item)
 
 def remove_item(idx):
   index = idx - 1
@@ -127,12 +132,12 @@ def remove_item(idx):
   print("Removed {}".format(item))
 
 def show_help():
-  print("\nSeparate each item with a comma.")
   print("Name of the Book?")
   print("Enter HELP for instructions")
   print("Enter SHOW to show list")
   print("Enter DONE to stop")
   print("Enter REMOVE to remove book")
+  print("Enter MOVE to move to new number")
 
 def add_to_list(books):
   book_list.append(books)
@@ -162,6 +167,16 @@ while True:
     show_books()
     idx = input("Book number?")
     remove_item(int(idx))
+    continue
+  elif new_book =="MOVE":
+    show_books()
+    idx = input("Book number?")
+    new_idx = input("New book number?")
+    move_item(int(idx), int(new_idx))
+    show_books()
+    continue
+  else:
+    new_list = new_book.split(",")
     continue
   add_to_list(new_book)
   continue
