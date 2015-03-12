@@ -180,9 +180,23 @@
 #     continue
 #   add_to_list(new_book)
 #   continue
-#   excercise 13
-def sillycase(arg):
-  firstpart, secondpart = arg[:len(arg)/2.0], arg[len(arg)/2.0:]
-  print(firstpart)
-  print(secondpart)
-sillycase("moulding")
+# #   excercise 13
+# def sillycase(arg):
+#   firstpart, secondpart = arg[:len(arg)/2.0], arg[len(arg)/2.0:]
+#   print(firstpart)
+#   print(secondpart)
+# sillycase("moulding")
+# fiz_buz excercise
+
+def fiz_buz(arg):
+  if arg%3 == 0 and arg%5 == 0:
+    print("fiz buz")
+  elif arg%3 == 0:
+    print("fiz")
+  elif arg%5 == 0:
+    print("buz")
+  return
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+for i in arr:
+  fiz_buz(arr[i-1])
