@@ -118,65 +118,71 @@
 
 # print(names_1)
 #
-# exercies 12
-book_list = []
-def move_item(idx, new_idx):
-  index = idx - 1
-  new_index = new_idx - 1
-  item = book_list.pop(index)
-  book_list.insert(new_index, item)
+# # exercies 12
+# book_list = []
+# def move_item(idx, new_idx):
+#   index = idx - 1
+#   new_index = new_idx - 1
+#   item = book_list.pop(index)
+#   book_list.insert(new_index, item)
 
-def remove_item(idx):
-  index = idx - 1
-  item = book_list.pop(index)
-  print("Removed {}".format(item))
+# def remove_item(idx):
+#   index = idx - 1
+#   item = book_list.pop(index)
+#   print("Removed {}".format(item))
 
-def show_help():
-  print("Name of the Book?")
-  print("Enter HELP for instructions")
-  print("Enter SHOW to show list")
-  print("Enter DONE to stop")
-  print("Enter REMOVE to remove book")
-  print("Enter MOVE to move to new number")
+# def show_help():
+#   print("Name of the Book?")
+#   print("Enter HELP for instructions")
+#   print("Enter SHOW to show list")
+#   print("Enter DONE to stop")
+#   print("Enter REMOVE to remove book")
+#   print("Enter MOVE to move to new number")
 
-def add_to_list(books):
-  book_list.append(books)
-  print("Added {} to list".format(books))
+# def add_to_list(books):
+#   book_list.append(books)
+#   print("Added {} to list".format(books))
 
-def show_books():
-  print("Here are your books:")
-  count = 1
-  for books in book_list:
-    print("{}: {}".format(count, books))
-    count += 1
+# def show_books():
+#   print("Here are your books:")
+#   count = 1
+#   for books in book_list:
+#     print("{}: {}".format(count, books))
+#     count += 1
 
-show_help()
+# show_help()
 
-while True:
-  new_book = input("> ")
-  if new_book == "DONE":
-    show_books()
-    break
-  elif new_book == "HELP":
-    show_help()
-    continue
-  elif new_book == "SHOW":
-    show_books()
-    continue
-  elif new_book =="REMOVE":
-    show_books()
-    idx = input("Book number?")
-    remove_item(int(idx))
-    continue
-  elif new_book =="MOVE":
-    show_books()
-    idx = input("Book number?")
-    new_idx = input("New book number?")
-    move_item(int(idx), int(new_idx))
-    show_books()
-    continue
-  else:
-    new_list = new_book.split(",")
-    continue
-  add_to_list(new_book)
-  continue
+# while True:
+#   new_book = input("> ")
+#   if new_book == "DONE":
+#     show_books()
+#     break
+#   elif new_book == "HELP":
+#     show_help()
+#     continue
+#   elif new_book == "SHOW":
+#     show_books()
+#     continue
+#   elif new_book =="REMOVE":
+#     show_books()
+#     idx = input("Book number?")
+#     remove_item(int(idx))
+#     continue
+#   elif new_book =="MOVE":
+#     show_books()
+#     idx = input("Book number?")
+#     new_idx = input("New book number?")
+#     move_item(int(idx), int(new_idx))
+#     show_books()
+#     continue
+#   else:
+#     new_list = new_book.split(",")
+#     continue
+#   add_to_list(new_book)
+#   continue
+#   excercise 13
+def sillycase(arg):
+  firstpart, secondpart = arg[:len(arg)/2.0], arg[len(arg)/2.0:]
+  print(firstpart)
+  print(secondpart)
+sillycase("moulding")
