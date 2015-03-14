@@ -200,15 +200,36 @@
 # arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 # for i in arr:
 #   fiz_buz(arr[i-1])
-# updating information excercise
-person_1 = {}
+# # updating information exercise
+# person_1 = {}
 
-def update(person, key, info):
-  person[key] = info
-  print(person_1)
+# def update(person, key, info):
+#   person[key] = info
+#   print(person_1)
 
-update(person_1, input('What type?'), input('What info?'))
+# update(person_1, input('What type?'), input('What info?'))
+# word count exercise
+# 
+# 
+# 
+# # E.g. word_count("I am that I am") gets back a dictionary like:
+# {'i': 2, 'am': 2, 'that': 1}
+# Lowercase the string to make it easier.
+# Using .split() on the sentence will give you a list of words.
+# In a for loop of that list, you'll have a word that you can
+# check for inclusion in the dict (with "if word in dict"-style syntax).
+# Or add it to the dict with something like word_dict[word] = 1.
+def word_count(sentence):
+  word_dict = {}
+  x = sentence.lower().split()
+  for word in x:
+    if word in word_dict:
+      word_dict[word] += 1
+    else:
+      word_dict[word] = 1
+  print(word_dict)
 
+word_count("Good night good")
 
 
 
