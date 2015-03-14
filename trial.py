@@ -186,17 +186,25 @@
 #   print(firstpart)
 #   print(secondpart)
 # sillycase("moulding")
-# fiz_buz excercise
+# # fiz_buz excercise
 
-def fiz_buz(arg):
-  if arg%3 == 0 and arg%5 == 0:
-    print("fiz buz")
-  elif arg%3 == 0:
-    print("fiz")
-  elif arg%5 == 0:
-    print("buz")
-  return
+# def fiz_buz(arg):
+#   if arg%3 == 0 and arg%5 == 0:
+#     print("fiz buz")
+#   elif arg%3 == 0:
+#     print("fiz")
+#   elif arg%5 == 0:
+#     print("buz")
+#   return
 
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
-for i in arr:
-  fiz_buz(arr[i-1])
+# arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+# for i in arr:
+#   fiz_buz(arr[i-1])
+# updating information excercise
+
+def udate(info, keys):
+  for key in info:
+
+
+
+
