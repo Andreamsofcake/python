@@ -201,14 +201,13 @@
 # for i in arr:
 #   fiz_buz(arr[i-1])
 # updating information excercise
-person_1 = {'name':'Jenny', 'age': 20, 'location':'Miami'}
+person_1 = {}
 
 def update(person, key, info):
   person[key] = info
+  print(person_1)
 
-update(person_1, 'name', 'Timmy')
-
-print(person_1['name'])
+update(person_1, input('What type?'), input('What info?'))
 
 
 
