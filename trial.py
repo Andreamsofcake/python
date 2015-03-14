@@ -201,9 +201,16 @@
 # for i in arr:
 #   fiz_buz(arr[i-1])
 # updating information excercise
+person_1 = {'name':'Jenny', 'age': 20, 'location':'Miami'}
 
-def udate(info, keys):
-  for key in info:
+def update(person, key, info):
+  person[key] = info
+
+update(person_1, 'name', 'Timmy')
+
+print(person_1['name'])
+
+
 
 
 
